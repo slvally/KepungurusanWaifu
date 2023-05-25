@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Bidang Divisi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="index.php">ORMAWA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" aria-current="page" href="index.php">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="tambahpengurus.php?id_submit=99">Tambah Pengurus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="tabeldivisi.php">Divisi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="tabelbidang.php">Bidang Divisi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <h2 class="text-center mt-4">BIDANG DIVISI</h2>
+        <div class="d-flex justify-content-center">
+            <!-- <form action="table.php" method="post" name="myform2" class="d-flex">
+            <input id="filter" type="text" name='filter' placeholder="Cari Nama" class="form-control">
+            <button class="btn btn-success ms-2" type="submit" name='submit'>Filter!</button>
+            </form> -->
+        </div>
+        <div class="container mt-3 border py-3 w-50" style="overflow-x: auto; overflow-y: auto; height: 480px;">
+            <table class="table-responsive table table-bordered table-striped table-hover" id="table">
+                <thead>
+                  <tr>
+                    <th style="width: 10%;" scope="col">No</th>
+                    <th style="width: 30%;" scope="col">Jabatan</th>
+                    <th style="width: 30%;" scope="col">ID Divisi</th>
+                    <th style="width: 30%;" scope="col">Option</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  DATA_TABEL                   
+                </tbody>
+              </table>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="index.php">
+              <button type="button" class="btn btn-dark mt-4 me-2" id="button">Kembali</button>
+          </a>
+          <a href='editbidang.php?addbid=1'>
+            <button class='btn btn-success mt-4'>Add Record</button>
+          </a>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
